@@ -42,7 +42,7 @@ Create an organization in Asgardeo if you don't already have one. The organizati
 
 2. Update configuration file `src/config.json` with your app details.
 
-3. Update the `API_ENDPOINT` value in the home.tsx, with the desired choreo API endpoint.
+3. Add Choreo API endpoint under `API_ENDPOINT` property under `src/pages/home.tsx`.
 
 **Note:** You need `stsConfig` and `stsTokenEndpoint`additional to the default Asgardeo Auth Client configuration declared in the React SDK Documentation [here](https://github.com/asgardeo/asgardeo-auth-react-sdk#configuration).
 
@@ -60,7 +60,8 @@ Read more about the stsConfig [here](#STSConfig).
         "scope": [],
         "orgHandle": "",
     },
-    "stsTokenEndpoint": ""
+    "stsTokenEndpoint": "<CHOREO_TOKEN_ENDPOINT_URL>",
+    "resourceServerURLs": "<ADD_API_ENDPOINT_BASE_URL>"
 }
 
 ```
