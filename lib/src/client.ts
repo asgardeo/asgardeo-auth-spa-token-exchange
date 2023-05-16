@@ -26,7 +26,7 @@ import {
 import WorkerFile from "web-worker:./worker.ts";
 import { TokenExchangeAuthenticationHelper } from "./helpers/authentication-helper";
 
-const PRIMARY_INSTANCE = "primaryInstance";
+const PRIMARY_INSTANCE = 0;
 
 export interface STSConfig {
     client_id: string;
@@ -52,7 +52,7 @@ export type STSClientConfig = AuthSPAClientConfig & CustomAuthClientConfig;
  * @class TokenExchangePlugin
  */
 export class TokenExchangePlugin extends AsgardeoSPAClient {
-    public static getInstance(id?: string): AsgardeoSPAClient | undefined {
+    public static getInstance(id?: number): AsgardeoSPAClient | undefined {
         if (id && TokenExchangePlugin._instances?.get(id)) {
             return this._instances.get(id);
         } else if (!id && this._instances?.get(PRIMARY_INSTANCE)) {
