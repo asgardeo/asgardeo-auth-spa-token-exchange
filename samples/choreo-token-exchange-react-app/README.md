@@ -54,7 +54,7 @@ Please read [Contributing to the Code Base](http://wso2.github.io/) for details 
 
 ### Reporting Issues
 
-We encourage you to report issues, improvements, and feature requests creating [Github Issues](https://github.com/asgardeo/asgardeo-auth-spa-token-exchange/issues).
+We encourage you to report issues, improvements, and feature requests creating [Github Issues](https://github.com/asgardeo/asgardeo/issues).
 
 Important: Please be advised that security issues must be reported to security@wso2com, not as GitHub issues, in order to reach the proper audience. We strongly advise following the WSO2 Security Vulnerability Reporting Guidelines when reporting the security issues.
 
